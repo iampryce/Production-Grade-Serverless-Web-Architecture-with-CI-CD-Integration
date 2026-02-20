@@ -19,7 +19,7 @@ This project involves migrating a static website from Microsoft Azure to AWS in 
 
 
 
-![Severless](https://github.com/user-attachments/assets/fff2c121-8102-419d-b68e-265025967fff)
+![Severless](https://github.com/user-attachments/assets/59381bb3-cfc6-4f2d-85d9-f526efdfe754)
 
 
 
