@@ -187,5 +187,15 @@ This section involves the inetegration of contact form with email notification a
 
 ## Steps 
 
-## 1.   Created an IAM user for GitHub
+## 1.   Created an IAM user for GitHub  
+
+ _I created an IAM user with programatic access and attched AmazonS3FullAccess and CloudFrontFullAccess polices to the user_
+ 
+_Also created CLI access key for the IAM user_
+
+<img width="1332" height="552" alt="created-iam-user" src="https://github.com/user-attachments/assets/18d3f182-a4f4-4581-8bb8-88c33806716c" />
+
+
+## 2.   Added 
+ 
 
