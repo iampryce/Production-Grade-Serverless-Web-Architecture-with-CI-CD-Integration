@@ -53,7 +53,7 @@ This project involves migrating a static website from Microsoft Azure to AWS in 
  
 [Created an Alias Record in Route 53](#6-created-an-alias-record-in-route-53)
 
-
+[Part 2 Full severless and CICD integration](#part-2)
 
 ## Steps
 
@@ -173,6 +173,9 @@ ________________________________________________________________________________
 This section involves the inetegration of contact form with email notification and also the Full CI/CD Integration using GitHub Action, Api gateway, AWS Lambda to carry out tasks.
 
 
+![Full-Severless](https://github.com/user-attachments/assets/0826453e-e9df-4a94-9aef-dc8958c08060)
+
+
 ## 🔋 Services Used
 
 ![AWS IAM](https://img.shields.io/badge/AWS-IAM-orange?logo=amazonaws&logoColor=white)
@@ -181,4 +184,8 @@ This section involves the inetegration of contact form with email notification a
 ![Amazon SES](https://img.shields.io/badge/AWS-SES-232F3E?logo=amazonaws&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?logo=githubactions&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI/CD-Automated-blue)
+
+## Steps 
+
+## 1.   Created an IAM user for GitHub
 
