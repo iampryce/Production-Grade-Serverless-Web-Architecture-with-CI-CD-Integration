@@ -173,7 +173,7 @@ ________________________________________________________________________________
 This section involves the inetegration of contact form with email notification and also the Full CI/CD Integration using GitHub Action, Api gateway, AWS Lambda to carry out tasks.
 
 
-![Full-Severless](https://github.com/user-attachments/assets/0826453e-e9df-4a94-9aef-dc8958c08060)
+![Main-Architecture](https://github.com/user-attachments/assets/fb62082d-2981-40e5-ba72-6e892cda3cc0)
 
 
 ## 🔋 Services Used
@@ -259,7 +259,10 @@ Now the deployment is automated and each changes will reflect at every push
 
 https://github.com/user-attachments/assets/b0a34f56-7adc-457d-9b36-1660da17775f
 
+_________________________________________________________________________________________________
 
+
+##  
 
 
 
