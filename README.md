@@ -238,7 +238,30 @@ _git push -u origin main_
 
 ## 5. Added a git ignore file to set the files and folders i do not want to include in the deployment.
 
-
 <img width="1161" height="680" alt="add git ignore file" src="https://github.com/user-attachments/assets/f6d319b1-4023-44ec-b2a5-d426856348a7" />
 
- 
+
+
+## 6. CICD Pipepline Deployment Action
+
+Note: The initial YAML configuration caused CloudFront invalidation errors due to incorrect secret handling. This was resolved by using a dedicated GitHub Action for CloudFront invalidation, ensuring reliable cache updates during deployment.
+
+<img width="1254" height="494" alt="error encountered" src="https://github.com/user-attachments/assets/df01e450-e0ec-4771-92ad-e288d14c5357" />
+
+
+## ❌ Error fixed
+
+Now the deployment is automated and each changes will reflect at every push 
+
+<img width="1366" height="567" alt="Deployment fixed" src="https://github.com/user-attachments/assets/2322c790-f399-48e3-abad-ca450bfe0eac" />
+
+
+
+https://github.com/user-attachments/assets/b0a34f56-7adc-457d-9b36-1660da17775f
+
+
+
+
+
+
+
