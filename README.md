@@ -164,11 +164,21 @@ Key implementations included:
 
 - Troubleshooting file structure and deployment issues
 
-(PART 2)
+_____________________________________________________________________________________________________________
+
+
+## (PART 2)
 
 ## 📌Project Overview 
-This section involves the inetegration of contact form with email notification and also the Full CI/CD Integration using GitHub Action, Api gateway, AWS Lambda to carry out tasks.n 
+This section involves the inetegration of contact form with email notification and also the Full CI/CD Integration using GitHub Action, Api gateway, AWS Lambda to carry out tasks.
 
 
+## 🔋 Services Used
 
+![AWS IAM](https://img.shields.io/badge/AWS-IAM-orange?logo=amazonaws&logoColor=white)
+![Amazon API Gateway](https://img.shields.io/badge/AWS-API_Gateway-FF4F8B?logo=amazonaws&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?logo=awslambda&logoColor=white)
+![Amazon SES](https://img.shields.io/badge/AWS-SES-232F3E?logo=amazonaws&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?logo=githubactions&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI/CD-Automated-blue)
 
