@@ -226,5 +226,17 @@ _git commit -m "Merge remote repository with local project"_
 
 _git push -u origin main_
 
+<img width="1182" height="681" alt="git commit to origin" src="https://github.com/user-attachments/assets/286763d2-7a3e-4e3b-99a6-d5c0b9ebafb9" />
+
+ ## 4.  Added a github action yml file, and created a workflow.
+- _The workflow automatically deploys the website from GitHub to AWS whenever code is pushed to the main branch, eliminating the need for manual uploads_
+
+- _The workflow includes actions that synchronize the local project files with the S3 bucket. During deployment, existing files are updated and outdated files are removed, ensuring the live website always reflects the latest version of the code._
+
+<img width="1291" height="682" alt="worklows file" src="https://github.com/user-attachments/assets/e1d4ae44-baaf-411b-a5d7-7851950ea008" />
 
 
+
+
+
+ 
