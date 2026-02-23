@@ -196,6 +196,8 @@ _Also created CLI access key for the IAM user_
 <img width="1332" height="552" alt="created-iam-user" src="https://github.com/user-attachments/assets/18d3f182-a4f4-4581-8bb8-88c33806716c" />
 
 
-## 2.   Added 
+## 2.   Added the access key to GitHub action secret.
+
+_ the iam user access key was added as secret in the git hub action secrect action secret was added to 
  
 
