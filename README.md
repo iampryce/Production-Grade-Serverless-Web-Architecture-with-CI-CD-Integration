@@ -9,10 +9,14 @@
 
 </p>
 
-<h1 align="center">   Migrating Static Website from Azure to AWS using-S3 CloudFront Route 53
+<h1 align="center">  Production Grade Serverless Web Architecture with CI/CD Integration
+
 </h1>
 
 <p align="center">
+
+
+## (PART 1)
 
 ## 📌Project Overview 
 This project involves migrating a static website from Microsoft Azure to AWS in order to leverage a highly scalable, cost-effective, and globally distributed hosting architecture.
@@ -159,4 +163,12 @@ Key implementations included:
 - Creating an Alias record in Route 53 to map the custom domain
 
 - Troubleshooting file structure and deployment issues
+
+(PART 2)
+
+## 📌Project Overview 
+This section involves the inetegration of contact form with email notification and also the Full CI/CD Integration using GitHub Action, Api gateway, AWS Lambda to carry out tasks.n 
+
+
+
 
