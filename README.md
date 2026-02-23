@@ -196,8 +196,23 @@ _Also created CLI access key for the IAM user_
 <img width="1332" height="552" alt="created-iam-user" src="https://github.com/user-attachments/assets/18d3f182-a4f4-4581-8bb8-88c33806716c" />
 
 
-## 2.   Added the access key to GitHub action secret.
+## 2.   Added the Github Action secrets
 
-_ the iam user access key was added as secret in the git hub action secrect action secret was added to 
- 
+-  _GitHub Secrets are secure storage for sensitive information that GitHub Actions workflow needs._
+
+-  _This allows the pipeline to access AWS without exposing credentials publicly_
+
+ -  _so github action asume the iam user  and access the recources listed there_
+
+<img width="1328" height="600" alt="github-action-secrets" src="https://github.com/user-attachments/assets/2bac8a3e-07db-44d0-8050-923bffae4993" />
+
+ ## 3.   Initialized Git in the Local and Connect to My Existing repo
+
+   cmds
+   
+  git init  
+  
+  git add .
+
+  git commit -m "Initial commit - serverless portfolio frontend"
 
