@@ -236,14 +236,9 @@ _git push -u origin main_
 <img width="1291" height="682" alt="worklows file" src="https://github.com/user-attachments/assets/e1d4ae44-baaf-411b-a5d7-7851950ea008" />
 
 
-## 5. Commit and Push to Deploy
-
-commit and push to deploy
-
-<img width="1096" height="653" alt="pushed deployment" src="https://github.com/user-attachments/assets/fe6bcfed-6cb0-4f5c-acbb-e0b28b286ab6" />
+## 5. Added a git ignore file to set the files and folders i do not want to include in the deployment.
 
 
-
-
+<img width="1161" height="680" alt="add git ignore file" src="https://github.com/user-attachments/assets/f6d319b1-4023-44ec-b2a5-d426856348a7" />
 
  
