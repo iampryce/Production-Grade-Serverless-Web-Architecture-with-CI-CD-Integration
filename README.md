@@ -210,9 +210,21 @@ _Also created CLI access key for the IAM user_
 
    cmds
    
-  git init  
-  
-  git add .
+_git init_
 
-  git commit -m "Initial commit - serverless portfolio frontend"
+_git add ._
+
+_git commit -m "Initial commit - serverless portfolio"_
+
+_git branch -M main_
+
+_git remote add origin https://github.com/yourusername/serverless-portfolio_
+
+_git pull main origin_ 
+
+_git commit -m "Merge remote repository with local project"_
+
+_git push -u origin main_
+
+
 
