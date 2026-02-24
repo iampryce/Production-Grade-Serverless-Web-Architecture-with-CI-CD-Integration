@@ -53,7 +53,7 @@ This project involves migrating a static website from Microsoft Azure to AWS in 
  
 [Created an Alias Record in Route 53](#6-created-an-alias-record-in-route-53)
 
-[Part 2 Full severless and CICD integration](#part-2)
+[Part 2 Full severless and CICD integration](#part-2a)
 
 ## Steps
 
@@ -167,7 +167,7 @@ Key implementations included:
 _____________________________________________________________________________________________________________
 
 
-## (PART 2)
+## (PART 2A)
 
 ## 📌Project Overview 
 This section involves the inetegration of contact form with email notification and also the Full CI/CD Integration using GitHub Action, Api gateway, AWS Lambda to carry out tasks.
@@ -262,7 +262,7 @@ https://github.com/user-attachments/assets/b0a34f56-7adc-457d-9b36-1660da17775f
 _________________________________________________________________________________________________
 
 
-##  
+## (Part 2B)
 
 
 
