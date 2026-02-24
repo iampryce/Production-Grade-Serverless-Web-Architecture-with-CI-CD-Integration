@@ -15,7 +15,7 @@
    Example: https://abc123.execute-api.us-east-1.amazonaws.com/prod/contact
 ---------------------------------------------------------- */
 const CONFIG = {
-  API_ENDPOINT: 'https://YOUR_API_GATEWAY_ID.execute-api.REGION.amazonaws.com/prod/contact',
+  API_ENDPOINT: 'https://ydgqrep0qi.execute-api.us-east-1.amazonaws.com/prod/contact',
 };
 
 /* ----------------------------------------------------------
