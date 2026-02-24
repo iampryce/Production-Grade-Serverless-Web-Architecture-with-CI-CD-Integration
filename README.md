@@ -61,19 +61,19 @@ This project involves migrating a static website from Microsoft Azure to AWS in 
 
 _Amazon Route 53 was configured to manage the domain’s DNS records and route traffic to the CloudFront distribution_
 
-<img width="1353" height="622" alt="Route 53 hosted zone" src="https://github.com/user-attachments/assets/b62473b5-8241-468b-97fa-8f4e8ad130d0" />
+<img width="1153" height="622" alt="Route 53 hosted zone" src="https://github.com/user-attachments/assets/b62473b5-8241-468b-97fa-8f4e8ad130d0" />
 
 
 ## 2. Updated Nameservers in Namecheap
 
 _By updating the domain’s name servers in Namecheap, Route 53 now manages the domain’s DNS records._
 
-<img width="1319" height="647" alt="Nameseverupdated" src="https://github.com/user-attachments/assets/d4c1a014-7641-45b3-ba15-5c5b5a9f5f9c" />
+<img width="1119" height="647" alt="Nameseverupdated" src="https://github.com/user-attachments/assets/d4c1a014-7641-45b3-ba15-5c5b5a9f5f9c" />
 
 
 ### DNS Propagation Verification ✔
 
-<img width="1352" height="613" alt="Dns propagation Veification" src="https://github.com/user-attachments/assets/3fce85bb-4e26-4ad5-8f1c-b66de30cc3b8" />
+<img width="1152" height="613" alt="Dns propagation Veification" src="https://github.com/user-attachments/assets/3fce85bb-4e26-4ad5-8f1c-b66de30cc3b8" />
 
 
 ## 3. Requested SSL Certificate (AWS Certificate Manager)
@@ -82,7 +82,7 @@ _integrateed SSL/TLS certificate to enable secure HTTPS connections using AWS ce
 
 Note: Since Route 53 now manages DNS, validation becomes automatic.
 
-<img width="1354" height="602" alt="cerificate manger" src="https://github.com/user-attachments/assets/167dec85-373e-4897-9d1d-9272c4331e20" />
+<img width="1154" height="602" alt="cerificate manger" src="https://github.com/user-attachments/assets/167dec85-373e-4897-9d1d-9272c4331e20" />
 
 
 ## 4. Createed S3 Bucket 
@@ -90,11 +90,11 @@ _Created S3 bucket to store and serve website assets_
 
 Note: Bucket will not be made public as cloudfront will access the content securely
 
-<img width="1343" height="624" alt="created a S3 bucket" src="https://github.com/user-attachments/assets/0da5deb8-1b82-4fa2-a554-ba2526bdf9b6" />
+<img width="1143" height="624" alt="created a S3 bucket" src="https://github.com/user-attachments/assets/0da5deb8-1b82-4fa2-a554-ba2526bdf9b6" />
 
 ### Websites files uploaded into the S3 ✔
 
-<img width="1351" height="627" alt="uploaded website in S3" src="https://github.com/user-attachments/assets/e8517629-e008-436a-bb8c-59a82f833206" />
+<img width="1151" height="627" alt="uploaded website in S3" src="https://github.com/user-attachments/assets/e8517629-e008-436a-bb8c-59a82f833206" />
 
 ## 5. Created CloudFront Distribution
 
@@ -110,9 +110,9 @@ _I created a CloudFront distribution to deliver the website globally with secure
   
 - Disabled WAF ( waf is not need for this use)
 
-<img width="1327" height="628" alt="created cloudfront distribution 1" src="https://github.com/user-attachments/assets/c55d2247-2374-4bc6-91f2-d884d15d5278" />
+<img width="1127" height="628" alt="created cloudfront distribution 1" src="https://github.com/user-attachments/assets/c55d2247-2374-4bc6-91f2-d884d15d5278" />
 
-<img width="1339" height="663" alt="created cloudfront distribution 3" src="https://github.com/user-attachments/assets/1f4dd7fc-5a8d-4716-8245-6f92989073eb" />
+<img width="1139" height="663" alt="created cloudfront distribution 3" src="https://github.com/user-attachments/assets/1f4dd7fc-5a8d-4716-8245-6f92989073eb" />
 
 
 
@@ -120,7 +120,7 @@ _I created a CloudFront distribution to deliver the website globally with secure
 
 Note:This allows Route 53 to send traffic to CloudFront distribution
 
-<img width="1351" height="620" alt="created an alias record 1" src="https://github.com/user-attachments/assets/3a5d601f-8c1c-46ae-a45e-565025dd763c" />
+<img width="1151" height="620" alt="created an alias record 1" src="https://github.com/user-attachments/assets/3a5d601f-8c1c-46ae-a45e-565025dd763c" />
 
 
 
@@ -193,7 +193,7 @@ This section involves the inetegration of contact form with email notification a
  
 _Also created CLI access key for the IAM user_
 
-<img width="1332" height="552" alt="created-iam-user" src="https://github.com/user-attachments/assets/18d3f182-a4f4-4581-8bb8-88c33806716c" />
+<img width="1132" height="552" alt="created-iam-user" src="https://github.com/user-attachments/assets/18d3f182-a4f4-4581-8bb8-88c33806716c" />
 
 
 ## 2.   Added the Github Action secrets
@@ -204,7 +204,7 @@ _Also created CLI access key for the IAM user_
 
  -  _so github action asume the iam user  and access the recources listed there_
 
-<img width="1328" height="600" alt="github-action-secrets" src="https://github.com/user-attachments/assets/2bac8a3e-07db-44d0-8050-923bffae4993" />
+<img width="1128" height="600" alt="github-action-secrets" src="https://github.com/user-attachments/assets/2bac8a3e-07db-44d0-8050-923bffae4993" />
 
  ## 3.   Initialized Git in the Local and Connect to My Existing repo
 
@@ -233,7 +233,7 @@ _git push -u origin main_
 
 - _The workflow includes actions that synchronize the local project files with the S3 bucket. During deployment, existing files are updated and outdated files are removed, ensuring the live website always reflects the latest version of the code._
 
-<img width="1291" height="682" alt="worklows file" src="https://github.com/user-attachments/assets/e1d4ae44-baaf-411b-a5d7-7851950ea008" />
+<img width="1191" height="682" alt="worklows file" src="https://github.com/user-attachments/assets/e1d4ae44-baaf-411b-a5d7-7851950ea008" />
 
 
 ## 5. Added a git ignore file to set the files and folders i do not want to include in the deployment.
@@ -246,7 +246,7 @@ _git push -u origin main_
 
 Note: The initial YAML configuration caused CloudFront invalidation errors due to incorrect secret handling. This was resolved by using a dedicated GitHub Action for CloudFront invalidation, ensuring reliable cache updates during deployment.
 
-<img width="1254" height="494" alt="error encountered" src="https://github.com/user-attachments/assets/df01e450-e0ec-4771-92ad-e288d14c5357" />
+<img width="1154" height="494" alt="error encountered" src="https://github.com/user-attachments/assets/df01e450-e0ec-4771-92ad-e288d14c5357" />
 
 
 ## ❌ Error fixed
@@ -262,9 +262,55 @@ https://github.com/user-attachments/assets/b0a34f56-7adc-457d-9b36-1660da17775f
 _________________________________________________________________________________________________
 
 
-## (Part 2B)
+## (Part 2B) Severless Backend Contact Form Integration
+
+## Steps
+
+## 1. SES identity creation 
+_Verified my Email in SES, This allows AWS to send email on my behalf._
+
+<img width="316" height="480" alt="image" src="https://github.com/user-attachments/assets/3fef0f8b-8e28-4951-b6b6-1e2d4499b01b" />
+<img width="494" height="486" alt="SES Identity verification" src="https://github.com/user-attachments/assets/6f2955bb-7e1e-4505-9232-2360631f8c87" />
 
 
+## 2. Created a Lambda Function 
+- _I created an AWS Lambda function and configured it to handle contact form submissions._
+
+- _I attached the Amazon SES Full Access policy to the Lambda execution role, allowing the function to securely send email notifications using Amazon SES._
+
+<img width="1144" height="549" alt="created lambda funtion" src="https://github.com/user-attachments/assets/bbe9a664-f653-48b5-bfe6-18352dddbbb9" />
+
+<img width="1140" height="569" alt="adeed SES full access policy" src="https://github.com/user-attachments/assets/e3b6c46c-b642-48e2-bf33-1076bb196a3a" />
+
+
+## 3. Created an API Gateway endpoint that triggers the Lambda function.
+
+- _i created a POST route (/contact) in API Gateway and integrated it with my lambda function_
+
+- _this allows the API endpoint to trigger the lambda function and process contact form submissions_
+
+  <img width="1153" height="301" alt="created an API route" src="https://github.com/user-attachments/assets/963b656e-5221-40c8-91da-ad02357d2d0e" />
+
+## 4. Connected my Frondend to the Backend Severless
+
+- _i retrieved the API Gateway invoke URL from the prod stage_
+
+- _i combined the stage URL with the /contact route to form the full backend endpoint_
+
+- _this endpoint allows the frontend to trigger the lambda function_
+
+<img width="1156" height="398" alt="Api-Endpoint-config" src="https://github.com/user-attachments/assets/f97ae985-ceac-49eb-95ad-346353107ed4" />
+
+
+# 5. Final step Deployment & testing
+
+### Deployment 
+
+git add .
+
+git commit -m "Connected contact form to serverless backend"
+
+git push origin main
 
 
 
