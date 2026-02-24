@@ -1,0 +1,45 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore local environment files
+.env
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+temp/
+tmp/
+
+# Ignore private keys
+*.pem
+*.key
+
+# Ignore serverless test files
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore local environment files
+.env
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+temp/
+tmp/
+
+# Ignore private keys
+*.pem
+*.key
+
+# Ignore serverless test files
+Serverless-project-files/
