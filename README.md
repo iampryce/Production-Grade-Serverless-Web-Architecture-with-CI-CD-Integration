@@ -312,5 +312,10 @@ git commit -m "Connected contact form to serverless backend"
 
 git push origin main
 
+### Contact form Validation Test
+
+ _❌ Error Encountered_
+<img width="1178" height="371" alt="testing error 1" src="https://github.com/user-attachments/assets/6d24fee7-43e7-4133-9240-43bbc63b2aff" />
+
 
 
