@@ -317,5 +317,24 @@ git push origin main
  _❌ Error Encountered_
 <img width="1178" height="371" alt="testing error 1" src="https://github.com/user-attachments/assets/6d24fee7-43e7-4133-9240-43bbc63b2aff" />
 
+### Debugging & Solutions ✔
 
+1. ### Configured CORS correctly
+I configured CORS in API Gateway to allow requests from my domain.
+
+- Configuration:
+Allow origin: https://rivetrecords.online
+
+- Allow methods: POST, OPTIONS
+
+- Allow headers: content-type
+
+2. ### Fixed AWS SDK compatibility issue
+
+- Node.js 18 Lambda runtime uses AWS SDK v3.
+
+- I updated the Lambda function to use:
+import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
+
+## Final verification
 
