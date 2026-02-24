@@ -336,5 +336,28 @@ Allow origin: https://rivetrecords.online
 - I updated the Lambda function to use:
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
-## Final verification
+## Final verification  ✔✔✔
+
+### CICD 
+
+
+
+
+
+
+_Sending Request_
+
+https://github.com/user-attachments/assets/cd918430-d17f-46f8-b369-63d1b352987a
+
+
+### Email verificatrion ✔
+
+<img width="1170" height="1096" alt="image" src="https://github.com/user-attachments/assets/22fb0aae-cdb9-40d6-a930-8b3460fc7a09" />
+
+
+
+
+
+
+
 
