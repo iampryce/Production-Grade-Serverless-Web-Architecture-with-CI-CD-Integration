@@ -40,26 +40,33 @@ ${message}
 
     await ses.sendEmail(params).promise();
 
+    // SUCCESS RESPONSE (correct)
     return {
       statusCode: 200,
       headers: {
         "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Methods": "OPTIONS,POST"
       },
       body: JSON.stringify({
-        message: "Email sent successfully",
+        message: "Email sent successfully"
       }),
     };
 
   } catch (error) {
-    console.error(error);
+    console.error("Lambda error:", error);
 
+    // ERROR RESPONSE (FIXED — added missing headers)
     return {
       statusCode: 500,
       headers: {
         "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Methods": "OPTIONS,POST"
       },
       body: JSON.stringify({
         message: "Failed to send email",
+        error: error.message
       }),
     };
   }
