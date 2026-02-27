@@ -363,4 +363,10 @@ A CI/CD pipeline was implemented using GitHub Actions, allowing automatic deploy
 This architecture showcases key cloud engineering and DevOps principles, including serverless computing, infrastructure automation, secure service integration, and continuous delivery, resulting in a scalable, highly available, and fully automated web application.
 
 
+## 🔍🔔  Observability and Monitoring
 
+Monitoring and alerting were implemented using Datadog and Slack.
+
+View full observability implementation here:
+
+https://github.com/iampryce/Serverless-Observability-Monitoring-with-Datadog-and-Slack
