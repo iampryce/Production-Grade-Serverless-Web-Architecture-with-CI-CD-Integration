@@ -43,3 +43,6 @@ tmp/
 
 # Ignore serverless test files
 Serverless-project-files/
+
+# Ignore screenshots files
+Screenshorts/
