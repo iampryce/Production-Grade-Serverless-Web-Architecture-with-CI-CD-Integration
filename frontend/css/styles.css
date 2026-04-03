@@ -19,15 +19,16 @@
    1. VARIABLES & RESET
 ---------------------------------------------------------- */
 :root {
-  --bg:        #080c0f;
-  --bg2:       #0d1117;
-  --surface:   #111820;
-  --border:    rgba(255, 255, 255, 0.07);
-  --accent:    #00e5a0;
-  --accent2:   #00aaff;
-  --muted:     #4a6070;
-  --text:      #c8d8e4;
-  --text-hi:   #eef4f8;
+  --bg:        #070a0e;
+  --bg2:       #0b0f16;
+  --surface:   #0f1520;
+  --border:    rgba(255, 255, 255, 0.09);
+  --accent:    #00f0a8;
+  --accent2:   #2db8ff;
+  --accent3:   #ff6b6b;
+  --muted:     #506070;
+  --text:      #ccdae8;
+  --text-hi:   #f0f6fc;
   --danger:    #ff4f6d;
 
   --font-head: 'Syne', sans-serif;
@@ -131,7 +132,10 @@ section {
   font-family: var(--font-head);
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 800;
-  color: var(--text-hi);
+  background: linear-gradient(135deg, var(--text-hi) 55%, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: -0.02em;
   line-height: 1.1;
   margin-bottom: 1.25rem;
@@ -341,19 +345,19 @@ nav {
 }
 
 .blob-1 {
-  width: 600px;
-  height: 600px;
-  background: rgba(0, 229, 160, 0.06);
-  top: -100px;
-  right: -100px;
+  width: 650px;
+  height: 650px;
+  background: rgba(0, 240, 168, 0.08);
+  top: -120px;
+  right: -120px;
 }
 
 .blob-2 {
-  width: 400px;
-  height: 400px;
-  background: rgba(0, 170, 255, 0.05);
+  width: 450px;
+  height: 450px;
+  background: rgba(45, 184, 255, 0.07);
   bottom: 0;
-  left: -100px;
+  left: -120px;
 }
 
 /* Hero layout */
@@ -478,12 +482,16 @@ nav {
   font-family: var(--font-head);
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--text-hi);
+  background: linear-gradient(135deg, var(--text-hi), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1;
 }
 
 .stat-num span {
   color: var(--accent);
+  -webkit-text-fill-color: unset;
 }
 
 .stat-label {
@@ -637,10 +645,16 @@ nav {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   padding: 0.35rem 0.8rem;
-  background: rgba(0, 229, 160, 0.07);
+  background: rgba(0, 240, 168, 0.07);
   color: var(--accent);
-  border: 1px solid rgba(0, 229, 160, 0.15);
-  border-radius: 4px;
+  border: 1px solid rgba(0, 240, 168, 0.2);
+  border-radius: 20px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.tech-tag:hover {
+  background: rgba(0, 240, 168, 0.14);
+  border-color: rgba(0, 240, 168, 0.4);
 }
 
 /* ----------------------------------------------------------
@@ -718,11 +732,25 @@ nav {
 
 .card-icon img,
 .card-icon svg {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
   flex-shrink: 0;
 }
+
+/* Brand color filters for the 4 icons served from jsDelivr (monochrome SVGs) */
+img[src*="amazonaws"]    { filter: invert(65%) sepia(91%) saturate(1500%) hue-rotate(2deg) brightness(107%); }
+img[src*="microsoftazure"]{ filter: invert(27%) sepia(94%) saturate(1100%) hue-rotate(195deg) brightness(95%); }
+img[src*="slack"]        { filter: brightness(0) invert(1); }
+img[src*="linkedin"]     { filter: invert(27%) sepia(90%) saturate(900%) hue-rotate(193deg) brightness(88%); }
+
+/* Colored icon pill per expertise category */
+.expertise-card:nth-child(1) .card-icon { background: rgba(255, 153, 0, 0.08);  border-radius: 10px; padding: 7px 10px; width: fit-content; }
+.expertise-card:nth-child(2) .card-icon { background: rgba(32, 136, 255, 0.08);  border-radius: 10px; padding: 7px 10px; width: fit-content; }
+.expertise-card:nth-child(3) .card-icon { background: rgba(0, 229, 160, 0.08);   border-radius: 10px; padding: 7px 10px; width: fit-content; }
+.expertise-card:nth-child(4) .card-icon { background: rgba(255, 220, 50, 0.08);  border-radius: 10px; padding: 7px 10px; width: fit-content; }
+.expertise-card:nth-child(5) .card-icon { background: rgba(230, 82, 44, 0.08);   border-radius: 10px; padding: 7px 10px; width: fit-content; }
+.expertise-card:nth-child(6) .card-icon { background: rgba(123, 66, 188, 0.08);  border-radius: 10px; padding: 7px 10px; width: fit-content; }
 
 .card-title {
   font-family: var(--font-head);
@@ -778,8 +806,9 @@ nav {
 }
 
 .project-card:hover {
-  border-color: rgba(0, 229, 160, 0.2);
+  border-color: rgba(0, 240, 168, 0.3);
   transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 240, 168, 0.08);
 }
 
 .project-card:hover::after {
@@ -788,8 +817,9 @@ nav {
 
 .project-card.featured {
   grid-column: span 2;
-  background: linear-gradient(135deg, rgba(0, 229, 160, 0.05), rgba(0, 170, 255, 0.05));
-  border-color: rgba(0, 229, 160, 0.15);
+  background: linear-gradient(135deg, rgba(0, 240, 168, 0.07), rgba(45, 184, 255, 0.06));
+  border-color: rgba(0, 240, 168, 0.2);
+  box-shadow: 0 4px 24px rgba(0, 240, 168, 0.06);
 }
 
 .project-top {
@@ -819,8 +849,8 @@ nav {
 }
 
 .project-icon img {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -1284,6 +1314,27 @@ footer {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
+  /* Icons — tablet */
+  .card-icon img,
+  .card-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .project-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .expertise-card:nth-child(1) .card-icon,
+  .expertise-card:nth-child(2) .card-icon,
+  .expertise-card:nth-child(3) .card-icon,
+  .expertise-card:nth-child(4) .card-icon,
+  .expertise-card:nth-child(5) .card-icon,
+  .expertise-card:nth-child(6) .card-icon {
+    padding: 5px 8px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1316,5 +1367,54 @@ footer {
   .arch-node {
     font-size: 0.65rem;
     padding: 0.3rem 0.6rem;
+  }
+
+  /* Icons — mobile */
+  .card-icon {
+    gap: 0.3rem;
+    min-height: 26px;
+  }
+
+  .card-icon img,
+  .card-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .project-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .project-icon {
+    gap: 0.3rem;
+  }
+
+  .expertise-card:nth-child(1) .card-icon,
+  .expertise-card:nth-child(2) .card-icon,
+  .expertise-card:nth-child(3) .card-icon,
+  .expertise-card:nth-child(4) .card-icon,
+  .expertise-card:nth-child(5) .card-icon,
+  .expertise-card:nth-child(6) .card-icon {
+    padding: 4px 6px;
+  }
+
+  .contact-link-icon img,
+  .contact-link-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .badge-icon img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .expertise-card {
+    padding: 1.5rem;
   }
 }
